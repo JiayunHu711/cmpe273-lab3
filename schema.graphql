@@ -1,0 +1,24 @@
+type Query {
+    hello: String!
+    students:[Student]
+    student(id: Int):Student
+    classes:[Class]
+    class(id: Int):Class
+}
+
+type Mutation{
+    addStudent(name: String!): Boolean!
+    addClass(name: String!): Boolean!
+    enrollClass(sid: Int!, cid: Int!): Boolean!
+}
+
+type Student{
+    id: Int
+    name: String!
+}
+
+type Class{
+    id: Int
+    name: String!
+    students: [Student]
+}
