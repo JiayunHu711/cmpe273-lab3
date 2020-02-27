@@ -1,5 +1,9 @@
 # Lab 3
 
+## Notes
+
+* set mutation return type to boolean so one can focus on change the status of data
+
 ## Pre-requisites
 
 * Install _Pipenv_
